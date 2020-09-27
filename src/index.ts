@@ -1,10 +1,10 @@
 "use strict";
 // module imports
-import express from "express";
-import bodyParser from "body-parser";
-import cors from "cors";
-import helmet from "helmet";
-import morgan from "morgan";
+import * as express from 'express';
+import * as bodyParser from "body-parser";
+import * as cors from "cors";
+import * as helmet from "helmet";
+import * as morgan from "morgan";
 
 // custom imports
 import config from "../config";

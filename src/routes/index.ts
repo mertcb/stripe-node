@@ -1,5 +1,5 @@
 
-import express from "express";
+import * as express from 'express';
 import Stripe from "stripe";
 import config from "../../config";
 
@@ -8,8 +8,7 @@ const stripe = new Stripe(config.STRIPE_SK, {
   typescript: true
 });
 
-const router = express().router;
-
+const router = express();
 
 router.get("/", (_: express.Request, res: express.Response): void => {
   res.send("Hello SuperCharge");
